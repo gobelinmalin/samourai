@@ -1,10 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const blogs = require("./blogs");
-const users = require("./users");
+const history = require("./history");
+const problems = require("./problems");
+const resolves = require("./resolves");
 
-router.use("/blogs", blogs);
-router.use("/users", users);
+router.use("/history", history);
+router.use("/problems", problems);
+router.use("/resolves", resolves);
 
 module.exports = router;
